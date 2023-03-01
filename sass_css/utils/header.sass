@@ -1,0 +1,48 @@
+@import "vars"
+@import "templates"
+
+header
+  .adaptive-menu-icon
+    display: none
+
+  .phone-menu
+    display: none
+
+  @extend %sides-pd-200
+  display: flex
+  flex-direction: row
+  height: calcVH(80px)
+  width: 100vw
+  background-color: white
+  justify-content: space-between
+  align-items: center
+  box-shadow: 0 calcRem(4px) calcRem(15px) rgba(49, 60, 72, 0.05)
+  margin-bottom: calcRem(69px)
+
+  .menu
+    width: 100%
+    +fontSize(18px)
+    font-weight: 400
+
+    ul
+      display: flex
+      justify-content: space-between
+      align-items: center
+      list-style: none
+      flex-direction: row
+      margin-bottom: 0
+
+      a
+        text-decoration: none
+        color: black
+
+      a:hover
+        color: grey
+
+  .personal-acc
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    gap: calcRem(15px)
+    img
+      width: 15%

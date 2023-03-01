@@ -1,0 +1,354 @@
+@import "utils/vars"
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px)
+  html
+    font-size: calc($default-font-size - 2px)
+
+  header
+    height: calcRem(80px)
+    width: 100vw
+
+  main
+    .tips
+      width: 100%
+
+      .tips-container-1
+        flex: 1
+
+      .tips-container-2
+        flex: 1
+
+    .conditions-wall
+      width: 80%
+
+    .roadmap
+      width: 80%
+
+    .about-insurance
+      width: 80%
+      height: 100%
+
+      .elems-list
+        height: 100%
+
+        li
+          height: auto
+          padding: calcVH(25px) calcVW(5px) calcVH(15px)
+
+          object
+            max-width: 45%
+            max-height: 35%
+            margin-bottom: calcRem(15px)
+
+          span
+            font-size: calcRem(13px)
+
+  footer
+    .container-3
+      .phone
+        font-size: calcRem(16px)
+        line-height: calcRem(20px)
+
+    .container-3
+      .how-to-go-button
+        width: 100%
+
+@media only screen and (max-width : 1200px)
+  html
+    font-size: $default-font-size - 3px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  html
+    font-size: $default-font-size - 4px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  html
+    font-size: $default-font-size - 5px
+
+  header
+    display: flex
+    flex-direction: column
+    height: max-content
+    width: 100vw
+    background-color: white
+    justify-content: space-between
+    align-items: center
+    padding: calcRem(20px) calcRem(50px)
+
+    .menu
+      display: none
+
+    .adaptive-menu-icon
+      display: block
+
+      .bars
+        display: flex
+        border-bottom: calcRem(12px) double black
+        border-top: calcRem(5px) solid black
+        content: ""
+        height: calcRem(5px)
+        width: calcRem(30px)
+        box-sizing: unset
+        vertical-align: middle
+
+      .bars:hover
+        cursor: pointer
+
+    .phone-menu
+      display: flex
+      list-style: none
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      margin: 0
+      position: fixed
+      top: 0
+      right: 0
+      height: 100vh
+      width: 100%
+      background-color: white
+      transition: .3s
+      transform: translateY(-100%)
+      z-index: 100
+
+      li
+        display: flex
+        justify-content: center
+        line-height: calcRem(25px)
+        font-size: calcRem(25px)
+        border: 2px solid black
+        border-radius: calcVW(30px)
+        box-shadow: 2px 2px 5px rgba(20, 29, 61, 0.15), -2px -2px 5px rgba(20, 29, 61, 0.15)
+        padding: 5%
+        width: 50%
+        margin-bottom: 2%
+
+      .phone
+        display: none
+
+      .city
+        display: none
+
+      a
+        text-decoration: none
+        color: black
+
+      .close-menu
+        position: fixed
+        right: 0
+        top: 0
+        font-size: calcRem(50px)
+        font-weight: 900
+        margin-top: calcRem(25px)
+        margin-right: calcRem(50px)
+
+      .close-menu:hover
+        cursor: pointer
+
+  main
+    padding: 0 calcVW(100px)
+    br
+      display: none
+
+    .main-board
+      display: flex
+      justify-content: space-between
+      flex-direction: column
+      align-items: center
+      margin-bottom: calcRem(70px)
+
+      .text-container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        max-width: calcVW(1165px)
+        max-height: calcVH(500px)
+        margin: calcRem(50px)
+
+        h1
+          text-align: center
+          font-size: calcRem(36px)
+          line-height: calcRem(43px)
+          margin-bottom: calcRem(24px)
+
+        p
+          text-align: center
+          font-size: calcRem(18px)
+          line-height: calcRem(22px)
+          margin-bottom: calcRem(70px)
+
+      .svg-container
+        display: none
+
+    .about-insurance
+      display: flex
+      flex-direction: column
+
+      width: 80%
+      height: max-content
+      margin-bottom: calcRem(110px)
+
+      .elems-list
+        display: flex
+        justify-content: space-between
+        flex-flow: row wrap
+        gap: calcRem(50px)
+        width: 100%
+
+        li
+          display: flex
+          justify-content: stretch
+          flex-direction: column
+          align-items: center
+
+          width: 40%
+          height: auto
+
+          padding: calcVH(38px) calcVW(15px) calcVH(15px)
+
+          object
+            max-width: 50%
+            max-height: 40%
+            margin-bottom: calcRem(23px)
+
+          span
+            font-size: calcRem(16px)
+            line-height: calcRem(20px)
+            text-align: center
+
+    .conditions-wall
+      display: flex
+      flex-direction: column
+      justify-content: stretch
+      width: 90%
+      margin-bottom: calcRem(70px)
+
+      .header
+        margin-bottom: calcRem(50px)
+
+      .elems-list
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        gap: calcRem(20px)
+
+        li
+          .svg-container
+            width: 50%
+
+            object
+              width: 80%
+
+
+          .text-container
+            display: flex
+            flex-direction: column
+            width: 50%
+            align-items: flex-start
+            justify-content: center
+
+            span
+              font-size: calcRem(40px)
+              line-height: calcRem(50px)
+
+            p
+              font-size: calcRem(20px)
+              font-weight: 500
+              line-height: calcRem(29px)
+              color: #0D1C41
+
+        li.item_2
+          display: flex
+          flex-direction: row-reverse
+          justify-content: stretch
+
+          .text-container
+            width: 50%
+            display: flex
+            flex-direction: column
+
+            .best-doctor
+              gap: calcRem(40px)
+              align-items: center
+
+              object
+                width: 100%
+
+              span
+                font-weight: 600
+                font-size: calcRem(26px)
+                line-height: calcRem(35px)
+
+            p
+              font-size: calcRem(20px)
+              line-height: calcRem(29px)
+
+          .svg-container
+            padding-right: calcRem(15px)
+
+            object
+              width: 50%
+
+
+    .roadmap
+      .tips
+        display: none
+
+      width: 100%
+
+      .header
+        margin-bottom: calcRem(45px)
+
+      .elems-list
+        flex-flow: row wrap
+        gap: calcRem(50px)
+
+        li
+
+          font-size: calcRem(14px)
+          line-height: calcRem(17px)
+
+          padding: calcRem(38px) calcRem(5px) calcRem(15px)
+
+          p
+            font-size: calcRem(18px)
+            line-height: calcRem(22px)
+
+  footer
+    gap: calcRem(20px)
+    padding: calcRem(50px) calcRem(100px)
+
+    height: max-content
+
+    .container-1
+      width: 50%
+      height: max-content
+    .container-2
+      justify-content: stretch
+      display: none
+    .container-3
+      display: none
+    .container-4
+      width: 50%
+      height: auto
+
+      .phone
+        color: white
+        font-size: calcRem(20px)
+        line-height: calcRem(26px)
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  html
+    font-size: $default-font-size - 6px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  html
+    font-size: $default-font-size - 7px

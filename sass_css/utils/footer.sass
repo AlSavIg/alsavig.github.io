@@ -1,0 +1,68 @@
+@import "templates"
+
+footer
+  @extend %sides-pd-200
+  display: flex
+  justify-content: space-between
+  flex-direction: row
+  align-items: stretch
+  gap: calcRem(20px)
+
+  height: max-content
+  width: 100vw
+
+  padding-top: calcRem(84px)
+  padding-bottom: calcRem(84px)
+
+  background-color: #4A607A
+
+  .container-1
+    @extend %footer-container-template
+
+  .container-2
+    @extend %footer-container-template
+    justify-content: stretch
+
+  .container-3
+    @extend %footer-container-template
+
+    .how-to-go-button
+      @extend %button-template
+
+  .container-4
+    @extend %footer-container-template
+
+    .phone
+      color: white
+      font-size: calcRem(24px)
+      line-height: calcRem(29px)
+
+    .email
+      color: white
+      font-size: calcRem(18px)
+      line-height: calcRem(26px)
+
+      a
+        text-decoration: underline
+
+    .social
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      justify-content: stretch
+      gap: calcRem(10px)
+
+      width: 100%
+      height: max-content
+
+      div
+        display: flex
+        justify-content: flex-start
+        align-items: center
+
+        width: 20%
+        height: calcRem(40px)
+
+        object
+          pointer-events: none
+          width: 100%

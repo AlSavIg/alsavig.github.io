@@ -1,0 +1,19 @@
+$default-font: 'SF Pro Display', sans-serif
+$default-font-size: 16px
+$default-vertical-height: 1080px
+$default-vertical-width: 1920px
+
+@function calcRem($size)
+  $remSize: calc($size / $default-font-size)
+  @return #{$remSize}rem
+
+@function calcVH($size)
+  $vhSize: calc($size / $default-vertical-height * 100)
+  @return #{$vhSize}vh
+
+@function calcVW($size)
+  $vwSize: calc($size / $default-vertical-width * 100)
+  @return #{$vwSize}vw
+
+=fontSize($size)
+  font-size: calcRem($size)

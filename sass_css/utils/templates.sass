@@ -1,0 +1,103 @@
+@import "vars"
+
+%sides-pd-200
+  width: 100%
+  padding: 0 calcVW(200px)
+
+.bf
+  font-weight: 600
+
+.f-size-24
+  +fontSize(24px)
+
+%header-template
+  font-size: calcRem(48px)
+  line-height: calcRem(57px)
+  text-align: center
+
+%button-template
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  padding: calcRem(20px) calcRem(75px)
+  gap: calcRem(27px)
+
+  border: 1px solid #4A607A
+  font-family: $default-font
+  box-shadow: 0 calcRem(2px) calcRem(18px) rgba(41, 41, 41, 0.1)
+  border-radius: calcRem(6px)
+  width: calcRem(265px)
+  height: calcRem(59px)
+  background-color: white
+
+  font-size: calcRem(16px)
+  line-height: calcRem(19px)
+  text-transform: uppercase
+
+  text-decoration: none
+  color: black
+
+  cursor: pointer
+
+%tips-container-template
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+  height: max-content
+  width: calcVW(330px)
+
+  font-size: calcRem(14px)
+  line-height: calcRem(17px)
+
+  .plain-text
+    padding-bottom: calcRem(14px)
+
+  ul
+    padding-left: calcRem(24px)
+
+  li
+    padding-left: calcRem(6px)
+    padding-bottom: calcRem(14px)
+
+  li:last-child
+    padding-bottom: 0
+
+  a
+    text-decoration: none
+    padding-bottom: calcRem(6px)
+    background: linear-gradient(#A89060, #A89060) no-repeat 0 100%
+    background-size: 100% calcRem(2px)
+    color: #A89060
+
+%footer-container-template
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: stretch
+  gap: calcRem(20px)
+  width: 20%
+
+  list-style: none
+
+  .plain-footer-text
+    font-size: calcRem(18px)
+    line-height: calcRem(21px)
+    text-decoration: none
+    color: #9C9C9C
+
+  a
+      text-decoration: none
+      color: white
+      font-size: calcRem(18px)
+      line-height: calcRem(21px)
+      background: linear-gradient(white, #DDD0A4) no-repeat 0 100%
+      background-size: 0 calcRem(2px)
+      padding-bottom: calcRem(2px)
+      transition: background-size .3s ease
+
+  .on_hover
+    a:hover
+      color: #DDD0A4
+      background-size: 100% calcRem(2px)

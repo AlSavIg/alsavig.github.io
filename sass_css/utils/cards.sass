@@ -1,0 +1,92 @@
+@import "vars"
+@import "templates"
+
+main
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 80%
+
+  .header
+    font-style: normal
+    font-size: calcRem(36px)
+    line-height: calcRem(38px)
+    color: #0D1C41
+    margin-bottom: calcRem(40px)
+    text-align: center
+
+    span
+      font-weight: 600
+
+  .d-flex
+    width: 100%
+
+  .card
+    width: 30%
+    max-width: 30%
+    margin-right: 2%
+    height: auto
+    max-height: 40%
+
+    word-wrap: anywhere !important
+
+    .card-body
+      li
+        div
+          display: -webkit-box
+          -webkit-line-clamp: 3
+          -webkit-box-orient: vertical
+          overflow: hidden
+
+    .card-header
+      a
+        text-decoration: none
+        color: black
+        font-weight: 600
+
+        h4
+          font-size: calcRem(20px)
+
+      a:hover
+        color: grey
+
+    .card-title
+      font-size: calcRem(24px)
+
+  .full-card
+    width: 100%
+    max-width: 100%
+    height: max-content
+
+    .card-body
+      li
+        div
+          display: block
+          -webkit-line-clamp: none
+          -webkit-box-orient: vertical
+          overflow: visible
+
+  .timestamp
+    display: flex
+    justify-content: flex-end
+    font-size: calcRem(16px)
+    font-weight: bold
+    font-style: italic
+    padding: calcRem(10px)
+
+  .buttons-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: calcRem(20px)
+    margin-bottom: calcRem(20px)
+    gap: calcRem(20px)
+    width: 80%
+
+  #create-new-comment
+    display: flex
+    flex-direction: column
+    width: 70%
+    justify-content: center
+    align-items: center
+    gap: calcRem(20px)

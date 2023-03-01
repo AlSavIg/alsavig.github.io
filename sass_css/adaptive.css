@@ -1,0 +1,350 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1440px) {
+  html {
+    font-size: 14px;
+  }
+  header {
+    height: 5rem;
+    width: 100vw;
+  }
+  main .tips {
+    width: 100%;
+  }
+  main .tips .tips-container-1 {
+    flex: 1;
+  }
+  main .tips .tips-container-2 {
+    flex: 1;
+  }
+  main .conditions-wall {
+    width: 80%;
+  }
+  main .roadmap {
+    width: 80%;
+  }
+  main .about-insurance {
+    width: 80%;
+    height: 100%;
+  }
+  main .about-insurance .elems-list {
+    height: 100%;
+  }
+  main .about-insurance .elems-list li {
+    height: auto;
+    padding: 2.3148148148vh 0.2604166667vw 1.3888888889vh;
+  }
+  main .about-insurance .elems-list li object {
+    max-width: 45%;
+    max-height: 35%;
+    margin-bottom: 0.9375rem;
+  }
+  main .about-insurance .elems-list li span {
+    font-size: 0.8125rem;
+  }
+  footer .container-3 .phone {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  footer .container-3 .how-to-go-button {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 13px;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 11px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 100vw;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 3.125rem;
+  }
+  header .menu {
+    display: none;
+  }
+  header .adaptive-menu-icon {
+    display: block;
+  }
+  header .adaptive-menu-icon .bars {
+    display: flex;
+    border-bottom: 0.75rem double black;
+    border-top: 0.3125rem solid black;
+    content: "";
+    height: 0.3125rem;
+    width: 1.875rem;
+    box-sizing: unset;
+    vertical-align: middle;
+  }
+  header .adaptive-menu-icon .bars:hover {
+    cursor: pointer;
+  }
+  header .phone-menu {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    transition: 0.3s;
+    transform: translateY(-100%);
+    z-index: 100;
+  }
+  header .phone-menu li {
+    display: flex;
+    justify-content: center;
+    line-height: 1.5625rem;
+    font-size: 1.5625rem;
+    border: 2px solid black;
+    border-radius: 1.5625vw;
+    box-shadow: 2px 2px 5px rgba(20, 29, 61, 0.15), -2px -2px 5px rgba(20, 29, 61, 0.15);
+    padding: 5%;
+    width: 50%;
+    margin-bottom: 2%;
+  }
+  header .phone-menu .phone {
+    display: none;
+  }
+  header .phone-menu .city {
+    display: none;
+  }
+  header .phone-menu a {
+    text-decoration: none;
+    color: black;
+  }
+  header .phone-menu .close-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    font-size: 3.125rem;
+    font-weight: 900;
+    margin-top: 1.5625rem;
+    margin-right: 3.125rem;
+  }
+  header .phone-menu .close-menu:hover {
+    cursor: pointer;
+  }
+  main {
+    padding: 0 5.2083333333vw;
+  }
+  main br {
+    display: none;
+  }
+  main .main-board {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4.375rem;
+  }
+  main .main-board .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60.6770833333vw;
+    max-height: 46.2962962963vh;
+    margin: 3.125rem;
+  }
+  main .main-board .text-container h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    line-height: 2.6875rem;
+    margin-bottom: 1.5rem;
+  }
+  main .main-board .text-container p {
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    margin-bottom: 4.375rem;
+  }
+  main .main-board .svg-container {
+    display: none;
+  }
+  main .about-insurance {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: max-content;
+    margin-bottom: 6.875rem;
+  }
+  main .about-insurance .elems-list {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    gap: 3.125rem;
+    width: 100%;
+  }
+  main .about-insurance .elems-list li {
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    padding: 3.5185185185vh 0.78125vw 1.3888888889vh;
+  }
+  main .about-insurance .elems-list li object {
+    max-width: 50%;
+    max-height: 40%;
+    margin-bottom: 1.4375rem;
+  }
+  main .about-insurance .elems-list li span {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+  }
+  main .conditions-wall {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 90%;
+    margin-bottom: 4.375rem;
+  }
+  main .conditions-wall .header {
+    margin-bottom: 3.125rem;
+  }
+  main .conditions-wall .elems-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  main .conditions-wall .elems-list li .svg-container {
+    width: 50%;
+  }
+  main .conditions-wall .elems-list li .svg-container object {
+    width: 80%;
+  }
+  main .conditions-wall .elems-list li .text-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  main .conditions-wall .elems-list li .text-container span {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+  }
+  main .conditions-wall .elems-list li .text-container p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.8125rem;
+    color: #0D1C41;
+  }
+  main .conditions-wall .elems-list li.item_2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: stretch;
+  }
+  main .conditions-wall .elems-list li.item_2 .text-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .conditions-wall .elems-list li.item_2 .text-container .best-doctor {
+    gap: 2.5rem;
+    align-items: center;
+  }
+  main .conditions-wall .elems-list li.item_2 .text-container .best-doctor object {
+    width: 100%;
+  }
+  main .conditions-wall .elems-list li.item_2 .text-container .best-doctor span {
+    font-weight: 600;
+    font-size: 1.625rem;
+    line-height: 2.1875rem;
+  }
+  main .conditions-wall .elems-list li.item_2 .text-container p {
+    font-size: 1.25rem;
+    line-height: 1.8125rem;
+  }
+  main .conditions-wall .elems-list li.item_2 .svg-container {
+    padding-right: 0.9375rem;
+  }
+  main .conditions-wall .elems-list li.item_2 .svg-container object {
+    width: 50%;
+  }
+  main .roadmap {
+    width: 100%;
+  }
+  main .roadmap .tips {
+    display: none;
+  }
+  main .roadmap .header {
+    margin-bottom: 2.8125rem;
+  }
+  main .roadmap .elems-list {
+    flex-flow: row wrap;
+    gap: 3.125rem;
+  }
+  main .roadmap .elems-list li {
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    padding: 2.375rem 0.3125rem 0.9375rem;
+  }
+  main .roadmap .elems-list li p {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+  footer {
+    gap: 1.25rem;
+    padding: 3.125rem 6.25rem;
+    height: max-content;
+  }
+  footer .container-1 {
+    width: 50%;
+    height: max-content;
+  }
+  footer .container-2 {
+    justify-content: stretch;
+    display: none;
+  }
+  footer .container-3 {
+    display: none;
+  }
+  footer .container-4 {
+    width: 50%;
+    height: auto;
+  }
+  footer .container-4 .phone {
+    color: white;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+/*# sourceMappingURL=adaptive.css.map */
