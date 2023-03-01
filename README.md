@@ -17,3 +17,5 @@
  - связь с ЛР 3 и 4 осуществляется по ссылке с главной страницы
  
  Актуальную версию сайта можно увидеть по [ссылке](https://e319-5-18-214-151.eu.ngrok.io/insurance-labs/main_page.php)
+ 
+ [Репозиторий проекта](https://github.com/AlSavIg/alsavig.github.io)
