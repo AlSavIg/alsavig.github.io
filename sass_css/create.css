@@ -228,6 +228,7 @@ main .card .card-body li div {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  font-size: 1rem;
 }
 main .card .card-header a {
   text-decoration: none;
@@ -241,7 +242,7 @@ main .card .card-header a:hover {
   color: grey;
 }
 main .card .card-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 main .full-card {
   width: 100%;

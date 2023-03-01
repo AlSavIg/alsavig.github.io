@@ -148,6 +148,13 @@
   main {
     padding: 0 5.2083333333vw;
   }
+  main .card {
+    width: 40%;
+    max-width: 40%;
+    margin-right: 5%;
+    height: auto;
+    max-height: 40%;
+  }
   main br {
     display: none;
   }
